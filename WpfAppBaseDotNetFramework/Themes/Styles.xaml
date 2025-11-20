@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="TextBlock">
+        <Setter Property="FontStyle"
+                Value="Italic" />
+    </Style>
+
+    <Style x:Key="BoldItalicTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="FontWeight"
+                Value="Bold" />
+    </Style>
+
+</ResourceDictionary>

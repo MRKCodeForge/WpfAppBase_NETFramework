@@ -1,0 +1,23 @@
+﻿<Application x:Class="WpfAppBaseDotNetFramework.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfAppBaseDotNetFramework"
+             xmlns:vm="clr-namespace:WpfAppBaseDotNetFramework.ViewModels"
+             xmlns:managers="clr-namespace:WpfAppBaseDotNetFramework.Managers">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <x:Static Member="managers:ApplicationManager.Instance"
+                      x:Key="ApplicationManager" />
+
+            <vm:ViewModelLocator x:Key="Locator" />
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Themes/Styles.xaml" />
+                <ResourceDictionary Source="Converters/Converters.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
