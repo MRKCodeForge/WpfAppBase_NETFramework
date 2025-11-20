@@ -1,0 +1,1 @@
+for /d /r . %%d in (bin obj _bin _install _work) do @if exist "%%d" rd /s/q "%%d"
